@@ -1,20 +1,24 @@
 public class Author {
-    private final String authorFirstName;
-    private final String authorLastName;
+    private final String FirstName;
+    private final String LastName;
 
 
 
     public Author (String authorFirstName, String authorLastName) {
-        this.authorFirstName = authorFirstName;
-        this.authorLastName = authorLastName;
+        this.FirstName = authorFirstName;
+        this.LastName = authorLastName;
     }
 
     public String getAuthorFirstName() {
-        return authorFirstName;
+        return FirstName;
     }
 
     public String getAuthorLastName() {
-        return authorLastName;
+        return LastName;
     }
 
+    @Override
+    public String toString() {
+        return "Автор - " + getAuthorFirstName() + " " + getAuthorLastName();
+    }
 }
