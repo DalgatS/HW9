@@ -32,7 +32,7 @@ public class Book {
         return "Книга" +
                 " опубликована " + publisherName +
                 " в " + publishingYear +
-                " году";
+                " году, " + getAuthor().toString();
     }
 
     @Override
